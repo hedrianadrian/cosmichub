@@ -1,0 +1,74 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, button, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url(1.png);
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Make the background image static (non-scrolling) */
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #4285f4;
+    font-family: Tahoma;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans';
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    display: block; /* Remove extra space below inline images */
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.epic-image {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 10px 0; /* Optional: Add margin for spacing */
+}
+
+button:hover {
+    background-color: #3b73af;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
